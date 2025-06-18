@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  .slide {
+    @apply min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-8 flex flex-col;
+  }
+  
+  .slide-content {
+    @apply max-w-6xl mx-auto w-full;
+  }
+  
+  .metric-card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .table-container {
+    @apply overflow-x-auto bg-white rounded-xl shadow-lg border border-gray-100;
+  }
+  
+  .data-table {
+    @apply w-full text-sm;
+  }
+  
+  .data-table th {
+    @apply bg-primary-50 px-4 py-3 text-left font-semibold text-primary-900 border-b border-gray-200;
+  }
+  
+  .data-table td {
+    @apply px-4 py-3 border-b border-gray-100;
+  }
+  
+  .data-table tr:hover {
+    @apply bg-gray-50;
+  }
+}
